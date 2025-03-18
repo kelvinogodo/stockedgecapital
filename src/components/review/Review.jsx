@@ -17,13 +17,10 @@ const Review = () => {
   return (
     <>
     <div className='review-section'>
-    <div className="why-choose-us-text-container review-head-container">
-            <div className="header review-header" data-aos="fade-up">
-                <span className="header-line"></span>
-                <h2>what our custormers are saying</h2>
+        <div className="videoframe-text-container">
+          <h1>investors <span className="highlight">review </span></h1>
+          <p>here are some reviews left by our most profitable investors.</p>
             </div>
-            <h1 data-aos="fade-up">custormer reviews</h1>
-        </div>
         <div className="review-card-container">
           <div className="review-card" data-aos="fade-up">
             <div className="review-card-img-container">
