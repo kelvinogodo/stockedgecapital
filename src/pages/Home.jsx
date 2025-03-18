@@ -15,6 +15,8 @@ import Copytrade from '../components/copytrade/Copytrade'
 import TradeInfo from '../components/TradeInfo/TradeInfo'
 import Videoframe from '../components/videoframe/Videoframe'
 import TeslaWidgetContainer from '../components/Teslawidget/TeslaWidgetContainer'
+import CryptoNews from '../components/CryptoNewsWidget'
+import CryptoNewsContainer from '../components/CryptoNewsSection/CryptoNewsContainer'
 const Home = () => {
   return (
     <main className='home-img'>
@@ -28,6 +30,7 @@ const Home = () => {
         {/* <Faqcard /> */}
       <About />
       <TeslaWidgetContainer />
+      <CryptoNewsContainer />
         {/* <Service /> */}
         {/* <Roadmap /> */}
         {/* <div className="crypto-chart-container" data-aos="fade-up">
