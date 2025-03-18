@@ -20,15 +20,15 @@ const Home = () => {
       <Landpage />
       <Videoframe />
       <Why />
-        {/* <Feature />
+        {/* <Feature /> */}
         
-        <Copytrade />
-        <TradeInfo />
-        <Faqcard />
+        {/* <Copytrade /> */}
+        {/* <TradeInfo /> */}
+        {/* <Faqcard /> */}
         <About />
-        <Service />
-        <Roadmap />
-        <div className="crypto-chart-container" data-aos="fade-up">
+        {/* <Service /> */}
+        {/* <Roadmap /> */}
+        {/* <div className="crypto-chart-container" data-aos="fade-up">
         <div className="price-chartt-section home-chart">
             <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
         </div>
