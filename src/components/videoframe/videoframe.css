@@ -27,9 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .videoframe-text-container h1{
     font-size: 4rem;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+}
+.videoframe-text-container p{
+    width: 70%;
+    text-align: center;
 }

@@ -14,6 +14,7 @@ import Faqcard from './Faqcard'
 import Copytrade from '../components/copytrade/Copytrade'
 import TradeInfo from '../components/TradeInfo/TradeInfo'
 import Videoframe from '../components/videoframe/Videoframe'
+import TeslaWidgetContainer from '../components/Teslawidget/TeslaWidgetContainer'
 const Home = () => {
   return (
     <main className='home-img'>
@@ -25,7 +26,8 @@ const Home = () => {
         {/* <Copytrade /> */}
         {/* <TradeInfo /> */}
         {/* <Faqcard /> */}
-        <About />
+      <About />
+      <TeslaWidgetContainer />
         {/* <Service /> */}
         {/* <Roadmap /> */}
         {/* <div className="crypto-chart-container" data-aos="fade-up">

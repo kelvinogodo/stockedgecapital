@@ -6,10 +6,10 @@
     padding: 30px 0px;
     background-position: center;
     background-color: var(--primary-color);
+    flex-direction: column;
 }
 .about-img-container{
     width: 45%;
-    height: 100%;
     position: relative;
     align-self: flex-start;
 }
