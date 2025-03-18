@@ -27,10 +27,11 @@ const Home = () => {
         
         {/* <Copytrade /> */}
         {/* <TradeInfo /> */}
-        {/* <Faqcard /> */}
+        
       <About />
       <TeslaWidgetContainer />
       <CryptoNewsContainer />
+      <Faqcard />
         {/* <Service /> */}
         {/* <Roadmap /> */}
         {/* <div className="crypto-chart-container" data-aos="fade-up">

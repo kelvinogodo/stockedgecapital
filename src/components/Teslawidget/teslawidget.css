@@ -35,4 +35,5 @@
 .tesla-widget-text-container p{
     color: var(--mild-color);
     margin: 20px 0px;
+    text-align: left;
 }
