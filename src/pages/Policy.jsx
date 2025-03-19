@@ -5,7 +5,9 @@ import Footer from '../components/footer/Footer'
 import Contact from '../components/contact/Contact'
 const Policy = () => {
   return (
-    <main className='landpage gold-page'>
+    <>
+      
+    <main className='landpage'>
     <Header />
       <section className='about-landpage policy-lanpage'>
         <div className="about-page-text">
@@ -45,8 +47,10 @@ const Policy = () => {
       </div>
       <About />
       <Contact />
+      
+      </main>
       <Footer />
-    </main>
+      </>
   )
 }
 

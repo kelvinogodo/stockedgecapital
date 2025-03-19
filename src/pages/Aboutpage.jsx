@@ -4,22 +4,31 @@ import Header from '../components/Header/Header'
 import About from '../components/about/About'
 import Footer from '../components/footer/Footer'
 import Contact from '../components/contact/Contact'
-import Faqcard from './Faqcard'
+import ForexAnalysisSection from '../components/ForexAnalysisSection/ForexAnalysisSection'
+import Copytrade from '../components/copytrade/Copytrade'
+import Why from '../components/why/Why'
+import TradeInfo from '../components/TradeInfo/TradeInfo'
 const Aboutpage = () => {
   return (
-    <main className='landpage gold-page'>
+    <>
+    <main className='landpage'>
     <Header />
       <section className='about-landpage'>
         <div className="about-page-text">
-          <h3>about vertexglobalwealth</h3>
-          <span className="small-thin-line"></span>
+          <div className="videoframe-text-container">
+            <h1>about  <span className="highlight">stockedgecapital </span></h1>
+        </div>
         </div>
       </section>
+      <Copytrade />
+      <TradeInfo />
+      <Why />
       <About />
-      <Faqcard />
+      <ForexAnalysisSection />
       <Contact />
-      <Footer />
+      
     </main>
+    <Footer /></>
   )
 }
 

@@ -1032,10 +1032,6 @@ button {
   }
 }
 
-.gold-page {
-  background-color: rgb(15, 15, 15) !important;
-}
-
 @media (max-width: 990px) and (min-width: 768px) {
   .crypto-chart-container {
     padding: 0px;

@@ -5,7 +5,7 @@
     padding: 50px 0px 20px 0px;
 }
 #contact{
-    background-color: rgb(0, 35, 117);
+    background-color: var(--primary-color);
     width: 100%;
 }
 .contact-card{
@@ -19,6 +19,7 @@
 }
 .contact-ball svg{
     margin: auto;
+    color: var(--primary-color);
 }
 .contact-ball{
     width: 40px;

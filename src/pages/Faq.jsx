@@ -6,7 +6,7 @@ import Faq from '../components/Faq/Faq'
 import Roadmap from '../components/roadmap/Roadmap'
 const Faqpage = () => {
   return (
-    <main className='landpage gold-page'>
+    <main className='landpage'>
     <Header />
       <section className='about-landpage faq-landpage'>
         <div className="about-page-text">

@@ -15,7 +15,8 @@
 
 .forex-card {
     width: 30%;
-    background: white;
+    background: var(--primary-color);
+    border: 1px solid rgba(70, 123, 255, 0.491);
     display: flex;
     align-items: center;
     justify-content: left;
@@ -23,6 +24,8 @@
     transition: 0.5s ease-in-out;
     padding: 0px 10px;
     align-self: flex-start;
+    height: 150px;
+    border-radius: 15px;
 }
 
 .forex-card:hover {
