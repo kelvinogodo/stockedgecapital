@@ -170,7 +170,7 @@
 }
 .bitcoin-card-container{
     width: 100%;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -200,6 +200,7 @@
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 500;
+    color: var(--secondary-color);
 }
 .bitcoin-card-text-container p{
     margin: 15px 0px 40px 0px;
@@ -243,7 +244,7 @@
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #282936;
+    background: var(--color-variant);
     border-radius: 1.625rem;
    }
    
@@ -285,7 +286,7 @@
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #282936;
+    color: var(--color-variant);
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -306,7 +307,7 @@
    }
   
    .policy-container{
-    background-color: white;
+    background-color: var(--primary-color);
     text-align: left;
     padding: 40px 0px;
     display: flex;
@@ -329,9 +330,6 @@
     margin: 20px 0px;
    }
    
-   .bitcoin-lanpage{
-    background-image: url(/public/How-Citizenship-by-Investment-Unlocks-the-Potential-of-Cryptocurrency.webp);
-   }
    .signup-logo{
         height: 200px;
         object-fit: cover;

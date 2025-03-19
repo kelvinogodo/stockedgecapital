@@ -6,7 +6,8 @@ import Contact from '../components/contact/Contact'
 
 const Buybitcoin = () => {
   return (
-    <main className='landpage gold-page'>
+    <>
+    <main className='landpage '>
     <Header />
       <section className='about-landpage bitcoin-lanpage'>
         <div className="about-page-text">
@@ -104,8 +105,9 @@ const Buybitcoin = () => {
         </div>
       </section>
       <Contact />
+      </main>
       <Footer />
-    </main>
+      </>
   )
 }
 

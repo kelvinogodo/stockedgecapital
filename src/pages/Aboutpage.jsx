@@ -26,7 +26,6 @@ const Aboutpage = () => {
       <About />
       <ForexAnalysisSection />
       <Contact />
-      
     </main>
     <Footer /></>
   )
