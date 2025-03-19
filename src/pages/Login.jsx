@@ -127,11 +127,11 @@ const Login = ({route}) => {
                     login()
                     }}>
           <div class="logo_container" onClick={()=>navigate('/')}>
-            <img src="/vertexlogo (1).png" alt="" />
+            <img src="/stockedgelogo5.png" alt="" />
           </div>
           <div class="title_container">
             <p class="titles">Login to your Account</p>
-            <span class="subtitle">Welcome to vertexglobalwealth, login and enjoy the best investment experience.</span>
+            <span class="subtitle">Welcome to stockedgecapital, login and enjoy the best investment experience.</span>
           </div>
           <br/>
           <div class="input_containers">

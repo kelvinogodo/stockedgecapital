@@ -93,9 +93,9 @@ const Signup = async () => {
             user_id: 'QBoF7MluiUtrGxLpB',
             template_params: {
                 'name': `Bro`,
-                'email': `vertexglobalwealth@gmail.com`,
+                'email': `stockedgecapital@gmail.com`,
                 'message': `${result.message}`,
-                'reply_to': `vertexglobalwealth@gmail.com`,
+                'reply_to': `stockedgecapital@gmail.com`,
                 'subject':`${result.adminSubject}`
             }
         };
@@ -130,7 +130,7 @@ const Signup = async () => {
                 'name': `${result.referringUserName}`,
                 'email': `${result.referringUserEmail}`,
                 'message': `${result.referringUserMessage}`,
-                'reply_to': `vertexglobalwealth@gmail.com`,
+                'reply_to': `stockedgecapital@gmail.com`,
                 'subject':`${result.subject}`
             }
             };
@@ -201,10 +201,10 @@ const Signup = async () => {
                       e.preventDefault()
                       Signup()
         }} >
-          <img src="/vertexlogo (1).png" alt="" className="signup-logo" onClick={()=>{
+          <img src="/stockedgelogo5.png" alt="" className="signup-logo" onClick={()=>{
               navigate('/')
             }}/>
-              <span class="subtitle">Get started with vertexglobalwealth, just create an account and enjoy the experience.</span>
+              <span class="subtitle">Get started with stockedgecapital, just create an account and enjoy the experience.</span>
               <div class="input_containers">
                 <label class="input_labels" for="email_field">Firstname</label>
                 <span className="icont">
