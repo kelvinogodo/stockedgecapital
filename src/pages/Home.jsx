@@ -23,16 +23,15 @@ const Home = () => {
       <Landpage />
       <Videoframe />
       <Why />
-        {/* <Feature /> */}
         
         {/* <Copytrade /> */}
         {/* <TradeInfo /> */}
-        
       <About />
       <TeslaWidgetContainer />
       <CryptoNewsContainer />
       <Faqcard />
       <ForexAnalysisSection />
+      <Feature />
         {/* <Service /> */}
         {/* <Roadmap /> */}
         {/* <div className="crypto-chart-container" data-aos="fade-up">

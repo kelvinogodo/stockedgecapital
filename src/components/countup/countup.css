@@ -5,5 +5,7 @@
     padding-left: 15px;
 }
 .countup-num{
-    color: rgb(56, 55, 55);
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
