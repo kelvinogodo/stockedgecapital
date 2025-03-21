@@ -5,7 +5,7 @@ const Copytrade = () => {
     const navigate = useNavigate()
   return (
       <div className='about-section copy-trade-section' id='about'>
-          <div className="about-wrapper copy-trade-wrapper">
+          <div className="about-wrapper copy-trade-wrapper about-copy-trade-section">
               
             <div className="why-choose-us-text-container about-text copy-trade-text">
                 <div className="header" data-aos="fade-up">

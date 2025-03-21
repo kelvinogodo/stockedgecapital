@@ -14,3 +14,11 @@
 .copy-trade-text{
     align-self: flex-start;
 }
+
+ @media screen and (max-width: 767px){
+    .about-copy-trade-section {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    
+ }

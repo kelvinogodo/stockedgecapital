@@ -13,9 +13,9 @@ const Aboutpage = () => {
     <>
     <main className='landpage'>
     <Header />
-      <section className='about-landpage'>
+      <section className='about-landpage my-about'>
         <div className="about-page-text">
-          <div className="videoframe-text-container">
+          <div className="videoframe-text-container about-intro">
             <h1>about  <span className="highlight">stockedgecapital </span></h1>
         </div>
         </div>

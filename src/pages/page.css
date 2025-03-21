@@ -646,4 +646,15 @@
         width: 90%;
         margin: auto;
     }
+    .about-intro{
+        padding: 2px 0px !important;
+    }
+    .about-page-text{
+        height: auto !important;
+        padding: 0px !important;
+    }
+    .my-about{
+        height: auto !important;
+        padding: 30px 0px 0px 0px !important;
+    }
    }
