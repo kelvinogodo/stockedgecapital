@@ -9,8 +9,11 @@ import {MdOutlineContentCopy} from 'react-icons/md'
 import { FiLink } from 'react-icons/fi'
 import { FaUsers } from 'react-icons/fa'
 import { FaExchangeAlt,FaHandHoldingUsd } from 'react-icons/fa'
-import {CgArrowsExchange} from 'react-icons/cg'
+import { CgArrowsExchange } from 'react-icons/cg'
 import Loader from '../Loader'
+import TradingViewFinancials from '../TradingViewFinancials'
+import TradingViewTechnicalAnalysis from '../TradingViewTechnicalAnalysis'
+import TeslaWidget from '../TeslaWidget'
 const Userdashboardhomepage = ({route}) => {
     const navigate = useNavigate()
     const [clipBoard, setClipBoard] = useState(false)
@@ -113,10 +116,28 @@ const Userdashboardhomepage = ({route}) => {
                         <small>transactions</small>
                         </div>             
                     </div>
-                </div>
-            <div className="price-chartt-section">
-            <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
-            </div>
+          </div>
+          <section className='trading-view-forex-section dashboard-forex-section'>
+                      <div className="videoframe-text-container" data-aos="fade-up">
+                        <h1>market <span className="highlight">analysis </span></h1>
+                      </div>
+                    <div className="trading-view-forex-wrapper">
+                        <div className="trading-view-card">
+                            <div className="trading-view-card-text-container" data-aos="fade-up">
+                                <h1>Technical Analysis</h1>
+                                <p>See what the technical analysis says about a given symbol with our display ratings, made for easy viewing.</p>
+                            </div>
+                            <TeslaWidget />
+                        </div>
+                        <div className="trading-view-card">
+                            <div className="trading-view-card-text-container" data-aos="fade-up">
+                                <h1>Fundamental Data</h1>
+                                <p>Kick the tires on the fundamentals with this deep dive into how a company is doing beyond simply its stock price.</p>
+                            </div>
+                            <TradingViewTechnicalAnalysis />
+                        </div>
+                    </div>
+              </section>
             <div className="referral-section">
                 <div className="referral-card1">
                     <div className="referraltext-wrapper">
@@ -130,7 +151,7 @@ const Userdashboardhomepage = ({route}) => {
                         <span className='clipboard-btn'>
                             <FiLink />
                         </span>
-                        <input type="text" value={userData ? `vertexglobalwealth.com/user/${userData.username ? userData.username : userData.referral}` : ''} ref={clipRef}/>
+                        <input type="text" value={userData ? `stockedgecapital.com/user/${userData.username ? userData.username : userData.referral}` : ''} ref={clipRef}/>
                         <span className={`clipboard-btn ${clipBoard ? <MdOutlineDone /> : ''}` } onClick={()=>{
                             copy()
                             setClipBoard(!clipBoard)

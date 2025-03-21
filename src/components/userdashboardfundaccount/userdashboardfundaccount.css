@@ -124,7 +124,7 @@
 .history-btn{
     padding: 12px 37px;
     background-color:var(--dark);
-    color: var(--primary-color);
+    color: var(--mild-color);
     margin-bottom: 50px;
     display: flex;
     align-items: center;

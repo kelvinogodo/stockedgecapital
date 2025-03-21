@@ -135,7 +135,7 @@ const Userdashboardheader = ({route}) => {
         }
         <div  className={`userdashboard-header ${bgColor && 'scroll-head'}`}>
             <div className="userdashboard-logo-container">
-                <img src="/vertexlogo (1).png" alt="" className='logo' onClick={()=>{
+                <img src="/stockedgelogo3.png" alt="" className='logo' onClick={()=>{
                     navigate('/')
                 }}/>
             </div>
