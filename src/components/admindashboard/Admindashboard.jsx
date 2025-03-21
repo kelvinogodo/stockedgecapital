@@ -52,7 +52,7 @@ const Admindashboard = ({ route }) => {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
                 'message': `${res.message}`,
-                'reply_to': `vertexglobalwealth@gmail.com`,
+                'reply_to': `stockedgecapital@gmail.com`,
                 'subject':`${res.subject}`
             }
           };
@@ -75,7 +75,7 @@ const Admindashboard = ({ route }) => {
                 'name': `${res.uplineName}`,
                 'email': `${res.uplineEmail}`,
                 'message': `${res.uplineMessage}`,
-                'reply_to': `vertexglobalwealth@gmail.com`,
+                'reply_to': `stockedgecapital@gmail.com`,
                 'subject':`${res.uplineSubject}`
             }
         };
@@ -133,7 +133,7 @@ const Admindashboard = ({ route }) => {
                 'name': `${name}`,
                 'email': `${activeEmail}`,
                 'message': `Congratulations! your withdrawal $${awaitedData.amount} has been approved. confirm withdrawal of $${awaitedData.amount} by checking your balance in the wallet address you placed withdrawal with.`,
-                'reply_to': `vertexglobalwealth@gmail.com`,
+                'reply_to': `stockedgecapital@gmail.com`,
                 'subject':`successful withdrawal`
             }
       };
@@ -291,11 +291,11 @@ const Admindashboard = ({ route }) => {
                     login()
                     }}>
           <div class="logo_container" onClick={()=>navigate('/')}>
-            <img src="/vertexlogo (1).png" alt="" />
+            <img src="/stockedgelogo5.png" alt="" />
           </div>
           <div class="title_container">
             <p class="titles">welcome admin</p>
-             <span class="subtitle">Welcome to vertexglobalwealth, login and enjoy the best investment experience.</span>
+             <span class="subtitle">Welcome to stockedgecapital, login and enjoy the best investment experience.</span>
           </div>
           <br/>
           <div class="input_containers">
