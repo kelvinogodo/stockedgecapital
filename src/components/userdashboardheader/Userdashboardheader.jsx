@@ -121,7 +121,7 @@ const Userdashboardheader = ({route}) => {
                     navigate('/myprofile')
                 }}>
                     <RiLockPasswordLine />
-                    <p>change password</p>
+                    <p>kyc</p>
                 </div>
                 
                 <div className="dropdown-tabs" onClick={()=>{
@@ -158,6 +158,9 @@ const Userdashboardheader = ({route}) => {
                     </li>
                     <li>
                         <Link to='/referrals'>referrals</Link>
+                    </li>
+                    <li>
+                        <Link to='/myprofile'>kyc</Link>
                     </li>
                     {
                         userData && userData.promo ? 
