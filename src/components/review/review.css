@@ -107,6 +107,7 @@
 
     .review-card-container {
         flex-direction: column;
+        width: 90%;
     }
 
     .review-card {

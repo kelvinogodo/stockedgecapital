@@ -114,4 +114,7 @@
     .drop{
         height: auto;
     }
+    .faq-container{
+        width: 90%;
+    }
 }

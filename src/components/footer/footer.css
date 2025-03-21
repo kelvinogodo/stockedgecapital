@@ -93,16 +93,19 @@ footer{
     .quick-link-logo-container{
       display: none;
     }
+    .trusted-patners-section{
+      width: 100%;
+    }
     .trusted-patners-img-container{
       width: 100%;
       flex-wrap: wrap;
     }
     .trusted-patener-icon{
-      width: 45%;
+      width: 50%;
     }
     .quicklinks-container{
       flex-direction: column;
-      width: 85%;
+      width: 90%;
     }
     .quicklink-card-container{
       flex-direction: column;
