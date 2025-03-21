@@ -1,7 +1,7 @@
 import React from 'react'
 import './plan.css'
 import { useState } from 'react'
-import { useNavigate,Link } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 const Plan = () => {
     const navigate = useNavigate()
     const [withdrawMethods,setWithdrawalMethods] = useState([
@@ -67,7 +67,12 @@ const Plan = () => {
       },
       ])
   return (
-          <div className='plan-section'>
+    <div className='plan-section'>
+      <div className="videoframe-text-container" data-aos="fade-up">
+              <h1>our  <span className="highlight">investment </span> plans</h1>
+              <p>here are some carefully currated investment plans, created to ensure maximum return of investment.</p>
+      </div>
+      <div className="service-gap"></div>
               <div className="why-choose-us-text-container">
                   <div className="header" data-aos="fade-up">
                       <span className="header-line"></span>

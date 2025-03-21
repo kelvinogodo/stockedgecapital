@@ -11,8 +11,6 @@ import Review from '../components/review/Review'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import Faqcard from './Faqcard'
-import Copytrade from '../components/copytrade/Copytrade'
-import TradeInfo from '../components/TradeInfo/TradeInfo'
 import Videoframe from '../components/videoframe/Videoframe'
 import TeslaWidgetContainer from '../components/Teslawidget/TeslaWidgetContainer'
 import CryptoNewsContainer from '../components/CryptoNewsSection/CryptoNewsContainer'
@@ -32,7 +30,6 @@ const Home = () => {
       <Faqcard />
       <ForexAnalysisSection />
       <Feature />
-        {/* <Service /> */}
         {/* <Roadmap /> */}
         {/* <div className="crypto-chart-container" data-aos="fade-up">
         <div className="price-chartt-section home-chart">

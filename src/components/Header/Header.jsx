@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom'
 import { IoHome } from "react-icons/io5";
 import { FaRegEdit } from "react-icons/fa";
 import { FaUserCheck } from "react-icons/fa6";
-import { FcComboChart } from "react-icons/fc";
+import { FaUserGear } from "react-icons/fa6";
+import { FaChartLine } from "react-icons/fa6";
 const Header = () => {
     const [showModal, setShowModal] = useState(false)
     const [bgColor, setBgColor] = useState(false)
@@ -43,6 +44,10 @@ const Header = () => {
                     <span className='line'></span>
                 </li>
                 <li>
+                    <Link to="/services">services</Link>
+                    <span className='line'></span>
+                </li>
+                <li>
                     <Link to="/faq">faqs</Link>
                     <span className='line'></span>
                 </li>
@@ -69,17 +74,6 @@ const Header = () => {
           <div className={`overlay ${showModal ? 'showing-modal' : ''}`} onClick={() => {
               setShowModal(false)
           }}>
-                {/* <div className={`menu-modal `} >
-                <ul>
-                    <Link to='/'>home</Link>
-                    <Link to='/about'>about</Link>
-                    <Link to='/faq'>faq</Link>
-                    <Link to='/buybitcoin'>buy bitcoin</Link>
-                    <Link to='/policy'>our policy</Link>
-                    <Link to='/signup'>signup</Link>
-                    <Link to='/login'>login</Link>
-                </ul>
-                </div> */}
                 <div class="menu-card">
                 <ul class="list">
                     <li class="element">
@@ -106,6 +100,12 @@ const Header = () => {
                     </svg>
                     <Link to='/about' class="label">about</Link>
                     </li>
+                  </ul>
+                  <ul class="list">
+                    <li class="element">
+                    <FaUserGear />
+                    <Link to='/services' class="label">services</Link>
+                    </li>
                 </ul>
                 <ul class="list">
                     <li class="element">
@@ -129,7 +129,7 @@ const Header = () => {
                     <Link to='/faq' class="label">FAQ</Link>
                     </li>
                     <li class="element delete">
-                    <FcComboChart />
+                    <FaChartLine />
                     <Link to='/buybitcoin' class="label">buy crypto</Link>
                     </li>
                 </ul>

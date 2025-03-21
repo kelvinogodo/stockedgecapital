@@ -29,6 +29,7 @@ import Faq from './pages/Faq';
 import Buybitcoin from './pages/Buybitcoin';
 import Policy from './pages/Policy';
 import './App.css'
+import Service from './components/service/Service';
 
 function App() {
    useEffect(() => {
@@ -151,6 +152,7 @@ function App() {
             <Route path='/goldstock' element={<GoldPage />}/>
             <Route path='/agrotech' element={<AgroTechPage />}/>
             <Route path='/realestate' element={<RealEsatePage />}/>
+            <Route path='/services' element={<Service />}/>
           </Routes>
         </motion.div>
       </Router>

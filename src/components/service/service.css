@@ -1,11 +1,15 @@
 .service-section{
     width: 100%;
-    padding: 30px 0px;
+    padding: 0px 0px;
     background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.service-gap{
+    width: 100%;
+    margin: 30px 0px;
 }
 .service-card-container{
     width: 85%;
