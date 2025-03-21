@@ -7,7 +7,7 @@ const Mt5Section = () => {
       <div className='about-section mt5-trade-section' id='about'>
           <div className="videoframe-text-container" data-aos="fade-up">
               <h1>explore  <span className="highlight">mt4/mt5 </span></h1>
-              <p>Grab an overview of global markets including price changes, open, high, low, and close values for selected instruments.</p>
+              <p>At stockedgecapital, we provide accurate forex analysis to help investors maximize profits through copy trading. Using MT4 and MT5, our experts analyze the markets with technical and fundamental strategies, identifying high-probability trades. We share real-time signals, market updates, and risk assessments directly through our Telegram channel, allowing investors to copy top-performing trades effortlessly.</p>
         </div>
           <div className="about-wrapper copy-trade-wrapper mt5-wrapper">
               
