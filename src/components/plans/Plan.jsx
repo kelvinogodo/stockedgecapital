@@ -70,7 +70,7 @@ const Plan = () => {
     <div className='plan-section'>
       <div className="videoframe-text-container" data-aos="fade-up">
               <h1>our  <span className="highlight">investment </span> plans</h1>
-              <p>here are some carefully currated investment plans, created to ensure maximum return of investment.</p>
+              <p>Here are some carefully currated investment plans, created to ensure maximum return of investment.</p>
       </div>
       <div className="service-gap"></div>
               <div className="why-choose-us-text-container">
