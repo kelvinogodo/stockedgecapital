@@ -5,7 +5,7 @@ import TradingViewTechnicalAnalysis from '../TradingViewTechnicalAnalysis'
 const ForexAnalysisSection = () => {
   return (
       <section className='trading-view-forex-section'>
-            <div className="videoframe-text-container">
+            <div className="videoframe-text-container" data-aos="fade-up">
               <h1>market <span className="highlight">analysis </span></h1>
             </div>
           <div className="trading-view-forex-wrapper">

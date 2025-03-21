@@ -17,6 +17,7 @@ import Videoframe from '../components/videoframe/Videoframe'
 import TeslaWidgetContainer from '../components/Teslawidget/TeslaWidgetContainer'
 import CryptoNewsContainer from '../components/CryptoNewsSection/CryptoNewsContainer'
 import ForexAnalysisSection from '../components/ForexAnalysisSection/ForexAnalysisSection'
+import Mt5Section from '../components/mt5/Mt5Section'
 const Home = () => {
   return (
     <main className='home-img'>
@@ -24,7 +25,6 @@ const Home = () => {
       <Videoframe />
       <Why />
         
-        {/* <Copytrade /> */}
         {/* <TradeInfo /> */}
       <About />
       <TeslaWidgetContainer />
@@ -39,6 +39,8 @@ const Home = () => {
             <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" style={{width:"100%",height:"536px",scrolling:"none",marginWidth:"0",marginHeight:"0", frameBorder:"0", border:"0",lineHeight: '14px'}}></iframe>
         </div>
       </div> */}
+      {/* <Copytrade /> */}
+        <Mt5Section />
         <Review />
         <Faq />
         <Contact />

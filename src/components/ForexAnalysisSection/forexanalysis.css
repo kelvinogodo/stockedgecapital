@@ -37,3 +37,17 @@
 .trading-view-card-text-container p{
     color: var(--mild-color);
 }
+@media (max-width: 990px) {
+    .trading-view-forex-wrapper{
+        flex-direction: column;
+    }
+    .trading-view-card{
+        width: 100%;
+        margin: 20px 0px;
+        height: 700px;
+    }
+    .trading-view-card-text-container{
+        padding-bottom: 20px;
+    }
+    
+}
