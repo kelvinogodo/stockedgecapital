@@ -15,7 +15,9 @@
     margin: 50px 0px;
     background-color: var(--primary-color);
 }
-
+.profit{
+    color: rgb(184, 184, 184);
+}
 .dashboardhomepagewrapper {
     width: 85%;
     display: flex;
@@ -42,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .username-container h2 {
@@ -149,7 +152,6 @@
     justify-content: space-around;
     align-items: center;
     margin: 10px;
-    /* border: 1px solid var(--color-variant); */
     background-color: var(--mild-color);
     color: var(--primary-color);
 }

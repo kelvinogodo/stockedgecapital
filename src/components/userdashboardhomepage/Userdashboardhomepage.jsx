@@ -78,7 +78,8 @@ const Userdashboardhomepage = ({route}) => {
             <div className="welcome-kyc-section">
                 <p>wallet Balance</p>
                 <div className="username-container">
-                    <h2>${userData ? userData.funded : ''}.00 USD</h2>
+              <h2>${userData ? userData.funded : ''}.00 USD</h2>
+              <small className='profit'>${userData ? userData.totalprofit : ''}.00 USD profit earned</small>
                 </div>
             </div>
                   <div className="dash-btn-container">
