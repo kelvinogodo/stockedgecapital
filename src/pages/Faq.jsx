@@ -15,7 +15,6 @@ const Faqpage = () => {
         </div>
       </section>
        <Faq />
-      <Roadmap />
       <Contact />
       <Footer />
     </main>

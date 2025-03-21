@@ -76,10 +76,10 @@ const Plan = () => {
               <div className="why-choose-us-text-container">
                   <div className="header" data-aos="fade-up">
                       <span className="header-line"></span>
-                      <h2>our plans</h2>
+                      <h2>best plans</h2>
                   </div>
-                  <h1 data-aos="fade-up">choose an investment plan</h1>
-                  <p data-aos="fade-up">choose an investment plan of your choice, but remember , the bigger the investment the bigger the return</p>
+                  <h1 data-aos="fade-up">select an investment plan</h1>
+                  <p data-aos="fade-up">that suits your investment goal.</p>
               </div>
               <div className="plan-card-container">
               {
