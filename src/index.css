@@ -114,7 +114,9 @@ p {
   line-height: 25px;
   color: var(--mild-color);
 }
-
+p::first-letter{
+  text-transform: uppercase;
+}
 a {
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
