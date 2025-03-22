@@ -79,8 +79,8 @@ const Signup = async () => {
 
      const userData = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_kp6f7tw',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_3ug6cei',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `${result.name}`,
                 'email': `${result.email}`,
@@ -89,8 +89,8 @@ const Signup = async () => {
 
           const adminData = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `Bro`,
                 'email': `stockedgecapital@gmail.com`,
@@ -124,8 +124,8 @@ const Signup = async () => {
           else {
             const referringUserData = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `${result.referringUserName}`,
                 'email': `${result.referringUserEmail}`,

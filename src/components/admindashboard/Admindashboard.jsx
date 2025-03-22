@@ -46,8 +46,8 @@ const Admindashboard = ({ route }) => {
         })
         const data = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
@@ -69,8 +69,8 @@ const Admindashboard = ({ route }) => {
       else {
         const uplineData = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `${res.uplineName}`,
                 'email': `${res.uplineEmail}`,
@@ -127,8 +127,8 @@ const Admindashboard = ({ route }) => {
     if (awaitedData.amount !== undefined) {
        const data = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `${name}`,
                 'email': `${activeEmail}`,

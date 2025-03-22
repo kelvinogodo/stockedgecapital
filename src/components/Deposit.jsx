@@ -81,23 +81,23 @@ const Deposit = ({amount,active,close,route}) => {
             
             const data = {
            service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
                 'message': `${res.message}`,
-                'reply_to': `vertexglobalwealth@gmail.com`,
+                'reply_to': `stockedgecapital@gmail.com`,
                 'subject':`${res.subject}`
             }
             };
             const adminData = {
             service_id: 'service_z18ebcc',
-            template_id: 'template_t5f4l2n',
-            user_id: 'QBoF7MluiUtrGxLpB',
+            template_id: 'template_up27ue5',
+            user_id: 'Ww1nD7GJ6FNyeRMZt',
             template_params: {
                 'name': `Bro`,
-                'email': `vertexglobalwealth@gmail.com`,
+                'email': `stockedgecapital@gmail.com`,
                 'message': `${res.adminMessage}`,
                 'reply_to': `${res.email}`,
                 'subject':`${res.adminSubject}`
