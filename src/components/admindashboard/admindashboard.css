@@ -1,11 +1,21 @@
+
 .credit-form-container{
     width: 85%;
     padding: 20px 10px;
-    background-color: rgb(228, 228, 228);
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px auto
+}
+.page-header h3{
+    color: var(--mild-color);
+}
+.page-header p{
+    color: whitesmoke;
+}
+.page-header h2{
+    color: white;
 }
 .credit-form{
     width: 100%;
