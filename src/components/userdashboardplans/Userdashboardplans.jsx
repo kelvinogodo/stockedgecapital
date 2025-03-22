@@ -30,7 +30,7 @@ const Userdashboardplans = ({route}) => {
     {
         id:1,
         min:500,
-        max:5000,
+        max:4999,
         image:'/btc.png',
         method:'BTC',
         type:'starter plan',
@@ -39,53 +39,53 @@ const Userdashboardplans = ({route}) => {
       },
       {
         id:2,
-        min:6000,
-        max:10000,
+        min:5000,
+        max:19999,
         image:'/bnb.png',
         method:'USDT',
-        type:'amatuer plan',
-        percent:'40%',
+        type:'gold plan',
+        percent:'35%',
         duration:'4 days'
       },
       {
         id:3,
-        min:11000,
-        max:20000,
+        min:20000,
+        max:49999,
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'professional plan',
-        percent:'60%',
-        duration:'6 days'
+        type:'premium plan',
+        percent:'50%',
+        duration:'7 days'
       },
       {
         id:4,
-        min:21000,
-        max:90000,
+        min:50000,
+        max:99000,
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'golden plan',
-        percent:'80%',
-        duration:'8 days'
+        type:'diamond plan',
+        percent:'65%',
+        duration:'10 days'
       },
       {
         id:5,
         min:100000,
-        max:5000000,
+        max:199999,
         image:'/tron.png',
         method:'tether(TRC20)',
         type:'VIP plan',
-        percent:'100%',
-        duration:'10 days'
+        percent:'80%',
+        duration:'12 days'
       },
       {
         id:6,
-        min:6000000,
-        max:10000000,
+        min:200000,
+        max:1000000,
         image:'/tron.png',
         method:'tether(TRC20)',
-        type:'premium plan',
+        type:'real estate plan',
         percent:'100%',
-        duration:'10 days'
+        duration:'14 days'
       },
   ])
   
