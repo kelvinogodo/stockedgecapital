@@ -58,7 +58,7 @@ const Plan = () => {
       {
         id:6,
         min:'200,000',
-        max:'1,000,000',
+        max:'5,000,000',
         image:'/tron.png',
         method:'tether(TRC20)',
         type:'real estate plan',
