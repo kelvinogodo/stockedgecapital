@@ -1,4 +1,6 @@
-
+.admin-dash{
+    min-height: 100vh;
+}
 .credit-form-container{
     width: 85%;
     padding: 20px 10px;
@@ -8,13 +10,13 @@
     justify-content: space-between;
     margin: 40px auto
 }
-.page-header h3{
+.admin-page-header h3{
     color: var(--mild-color);
 }
-.page-header p{
+.admin-page-header p{
     color: whitesmoke;
 }
-.page-header h2{
+.admin-page-header h2{
     color: white;
 }
 .credit-form{

@@ -278,7 +278,7 @@ const Admindashboard = ({ route }) => {
       }
   }
   return (
-    <main className='login-page'>
+    <main className='login-page admin-dash'>
       {
         loader && 
           <Loader />
@@ -435,7 +435,7 @@ const Admindashboard = ({ route }) => {
                 }}>
                 <AiOutlineArrowLeft />
               </div>
-            <div className="page-header">
+            <div className="page-header admin-page-header">
               <h3>checkout your list of signed in users</h3>
               <h2>Users logs</h2>
               <p>we keep track of all users info</p>

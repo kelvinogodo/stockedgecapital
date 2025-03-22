@@ -1,7 +1,6 @@
 import React from 'react'
 import Userdashboardheader from '../userdashboardheader/Userdashboardheader'
 import {FiArrowRight} from 'react-icons/fi'
-import Checkout from '../Checkout';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import {MdClose} from 'react-icons/md'
@@ -169,7 +168,7 @@ const Userdashboardwithdraw = ({route}) => {
           }
           <Userdashboardheader route={route}/>
           <div className="page-swiper-wrapper">
-              <div className="page-header">
+              <div className="page-header hi">
                   <h3>Choose an Option</h3>
                   <h2>withdrawal Methods</h2>
                   <p>Choose a withdrawal method to withdraw money.</p>
