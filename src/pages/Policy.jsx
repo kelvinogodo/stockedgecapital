@@ -41,7 +41,7 @@ const Policy = () => {
               Contact Information
               </h3>
               <p>
-              vertexglobalwealth is glad to receive your comments concerning this "Privacy Policy". In case you think that vertexglobalwealth does not follow the rules and violate this Statement, contact us at support@vertexglobalwealth.org We guarantee that we will take commercially reasonable efforts to discover and solve the problem.
+              STOCKEDGECAPITAL is glad to receive your comments concerning this "Privacy Policy". In case you think that stockedgecapital does not follow the rules and violate this Statement, contact us at stockedgecapital@gmail.com We guarantee that we will take commercially reasonable efforts to discover and solve the problem.
               </p>
             </div>
       </div>
