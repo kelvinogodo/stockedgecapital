@@ -79,7 +79,7 @@ const Userdashboardhomepage = ({route}) => {
                 <p>wallet Balance</p>
                 <div className="username-container">
               <h2>${userData ? userData.funded : ''}.00 USD</h2>
-              <small className='profit'>${userData ? userData.totalprofit : ''}.00 USD profit earned</small>
+              <small className='profit'>${userData ? userData.periodicProfit : ''}.00 USD profit earned</small>
                 </div>
             </div>
                   <div className="dash-btn-container">
@@ -89,7 +89,19 @@ const Userdashboardhomepage = ({route}) => {
                       <button className='dash-btn' onClick={() => navigate('/withdraw')}>
                           <FaHandHoldingUsd />withdraw
                       </button>
-                  </div>   
+          </div> 
+          <div className="withdrawll-card-container">
+            <div class="withdrawll-card">
+              <p class="time-text"><span>{ userData && userData.totalwithdraw}</span><span class="time-sub-text">usd</span></p>
+            <p class="day-text">withdrawn</p>
+            <FaHandHoldingUsd />
+            </div>
+            <div class="withdrawll-card">
+              <p class="time-text"><span>{ userData && userData.deposit[userData.deposit.length - 1].amount}</span><span class="time-sub-text">usd</span></p>
+            <p class="day-text">latest deposit</p>
+            <CgArrowsExchange />
+            </div>
+          </div>
             <div className="overview-container">
                       <div className="overview-card">
                         <div className="overview-icon-wrapper" onClick={()=>navigate('/myprofile')}>
