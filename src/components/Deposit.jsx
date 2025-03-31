@@ -67,7 +67,8 @@ const Deposit = ({amount,active,close,route}) => {
             },
             body:JSON.stringify({
                 amount:amount,
-                method:Active.method
+                method: Active.method,
+                proof:showImage
             })
         })
         const res = await req.json()
