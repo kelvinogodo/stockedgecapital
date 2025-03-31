@@ -92,14 +92,32 @@ const Userdashboardhomepage = ({route}) => {
           </div> 
           <div className="withdrawll-card-container">
             <div class="withdrawll-card">
-              <p class="time-text"><span>{ userData && userData.totalwithdraw}</span><span class="time-sub-text">usd</span></p>
-            <p class="day-text">withdrawn</p>
-            <FaHandHoldingUsd />
+              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.periodicProfit}</span></p>
+            <div className="small-card">
+                {/* <CgArrowsExchange /> */}
+                <p class="day-text">total profit</p>
+              </div>
             </div>
             <div class="withdrawll-card">
-              <p class="time-text"><span>{ userData && userData.deposit[userData.deposit.length - 1].amount}</span><span class="time-sub-text">usd</span></p>
-            <p class="day-text">latest deposit</p>
-            <CgArrowsExchange />
+              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.totalwithdraw}</span></p>
+           <div className="small-card">
+                {/* <CgArrowsExchange /> */}
+                <p class="day-text">total withdrawal</p>
+              </div>
+            </div>
+            <div class="withdrawll-card">
+              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.periodicProfit}</span></p>
+            <div className="small-card">
+                {/* <CgArrowsExchange /> */}
+                <p class="day-text">bonus</p>
+              </div>
+            </div>
+            <div class="withdrawll-card">
+              <p class="time-text"><span class="time-sub-text">$</span><span>{userData && userData.totaldeposit}</span></p>
+              <div className="small-card">
+                {/* <CgArrowsExchange /> */}
+                <p class="day-text">total deposit</p>
+              </div>
             </div>
           </div>
             <div className="overview-container">
