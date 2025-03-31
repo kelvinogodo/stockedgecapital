@@ -433,6 +433,12 @@ justify-content: space-around;
     .kyc-card-wrapper {
         width: 100%;
     }
+        .time-text {
+            font-size: 1.5rem;
+        }
+        .time-sub-text{
+            font-size: 1.5rem;
+        }
         .withdrawll-card-container {
             width: 100%;
             flex-direction: column;
