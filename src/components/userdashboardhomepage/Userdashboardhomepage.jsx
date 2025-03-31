@@ -92,7 +92,7 @@ const Userdashboardhomepage = ({route}) => {
           </div> 
           <div className="withdrawll-card-container">
             <div class="withdrawll-card">
-              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.periodicProfit}</span></p>
+              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.totalprofit}</span></p>
             <div className="small-card">
                 {/* <CgArrowsExchange /> */}
                 <p class="day-text">total profit</p>
