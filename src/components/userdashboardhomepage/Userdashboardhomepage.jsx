@@ -10,8 +10,11 @@ import { FiLink } from 'react-icons/fi'
 import { FaUsers } from 'react-icons/fa'
 import { FaExchangeAlt,FaHandHoldingUsd } from 'react-icons/fa'
 import { CgArrowsExchange } from 'react-icons/cg'
+import { MdCurrencyExchange } from "react-icons/md";
+import { BiMoneyWithdraw } from "react-icons/bi";
 import Loader from '../Loader'
-import TradingViewFinancials from '../TradingViewFinancials'
+import { MdAccountBalance } from "react-icons/md";
+import { MdAccountBalanceWallet } from "react-icons/md";
 import TradingViewTechnicalAnalysis from '../TradingViewTechnicalAnalysis'
 import TeslaWidget from '../TeslaWidget'
 const Userdashboardhomepage = ({route}) => {
@@ -81,73 +84,93 @@ const Userdashboardhomepage = ({route}) => {
               <h2>${userData ? userData.funded : ''}.00 USD</h2>
               <small className='profit'>${userData ? userData.periodicProfit : ''}.00 USD profit earned</small>
                 </div>
-            </div>
-                  <div className="dash-btn-container">
-                      <button className='dash-btn' onClick={() => navigate('/fundwallet')}>
-                          <CgArrowsExchange />deposit
-                      </button>
-                      <button className='dash-btn' onClick={() => navigate('/withdraw')}>
-                          <FaHandHoldingUsd />withdraw
-                      </button>
+          </div>
+          
+            <div className="dash-btn-container">
+              <button className='dash-btn' onClick={() => navigate('/fundwallet')}>
+                  <CgArrowsExchange />deposit
+              </button>
+              <button className='dash-btn' onClick={() => navigate('/withdraw')}>
+                  <FaHandHoldingUsd />withdraw
+              </button>
           </div> 
+          
+          <div className="overview-container">
+            <div className="overview-card">
+              <div className="overview-icon-wrapper" onClick={()=>navigate('/myprofile')}>
+              <div className="overview-icon-container">
+                  <FaUser />
+              </div>
+              <small>profile</small>
+              </div>
+              <div className="overview-icon-wrapper" onClick={()=>navigate('/plans')}>
+              <div className="overview-icon-container">
+                  <RiLuggageDepositLine />
+              </div>
+              <small>invest</small>
+              </div>
+              <div className="overview-icon-wrapper" onClick={()=>navigate('/referrals')}>
+              <div className="overview-icon-container">
+                  <FaUsers />
+              </div>
+              <small>referrals</small>
+              </div>
+              <div className="overview-icon-wrapper" onClick={()=>navigate('/transactions')}>
+              <div className="overview-icon-container">
+                  <FaExchangeAlt />
+              </div>
+              <small>transactions</small>
+              </div>             
+          </div>
+          </div>
           <div className="withdrawll-card-container">
             <div class="withdrawll-card">
-              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.totalprofit}</span></p>
-            <div className="small-card">
-                {/* <CgArrowsExchange /> */}
-                <p class="day-text">total profit</p>
+              <div className="withdrawll-card-icon-container">
+                  <MdAccountBalanceWallet />
+              </div>
+              <div className="withdrawll-card-text-container">
+                <h2>total profit</h2>
+              </div>
+              <div className="withdrawll-card-amount">
+                <h2>  <small>$</small> { userData && userData.totalprofit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
-              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.totalwithdraw}</span></p>
-           <div className="small-card">
-                {/* <CgArrowsExchange /> */}
-                <p class="day-text">total withdrawal</p>
+               <div className="withdrawll-card-icon-container purple">
+                  <MdAccountBalance />
+              </div>
+              <div className="withdrawll-card-text-container">
+                <h2>bonus earned</h2>
+              </div>
+              <div className="withdrawll-card-amount">
+                <h2> <small>$</small> { userData && userData.periodicProfit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
-              <p class="time-text"><span class="time-sub-text">$</span><span>{ userData && userData.periodicProfit}</span></p>
-            <div className="small-card">
-                {/* <CgArrowsExchange /> */}
-                <p class="day-text">bonus</p>
+              <div className="withdrawll-card-icon-container pink">
+                  <MdCurrencyExchange />
+              </div>
+              <div className="withdrawll-card-text-container">
+                <h2>total deposit</h2>
+              </div>
+              <div className="withdrawll-card-amount">
+               
+                <h2> <small>$</small> { userData && userData.totaldeposit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
-              <p class="time-text"><span class="time-sub-text">$</span><span>{userData && userData.totaldeposit}</span></p>
-              <div className="small-card">
-                {/* <CgArrowsExchange /> */}
-                <p class="day-text">total deposit</p>
+              <div className="withdrawll-card-icon-container gold">
+                  <BiMoneyWithdraw />
+              </div>
+              <div className="withdrawll-card-text-container">
+                <h2>total withdrawal</h2>
+              </div>
+              <div className="withdrawll-card-amount">
+                <h2> <small>$</small> { userData && userData.totalwithdraw}</h2>
               </div>
             </div>
           </div>
-            <div className="overview-container">
-                      <div className="overview-card">
-                        <div className="overview-icon-wrapper" onClick={()=>navigate('/myprofile')}>
-                        <div className="overview-icon-container">
-                            <FaUser />
-                        </div>
-                        <small>profile</small>
-                        </div>
-                        <div className="overview-icon-wrapper" onClick={()=>navigate('/plans')}>
-                        <div className="overview-icon-container">
-                            <RiLuggageDepositLine />
-                        </div>
-                        <small>invest</small>
-                        </div>
-                        <div className="overview-icon-wrapper" onClick={()=>navigate('/referrals')}>
-                        <div className="overview-icon-container">
-                            <FaUsers />
-                        </div>
-                        <small>referrals</small>
-                        </div>
-                        <div className="overview-icon-wrapper" onClick={()=>navigate('/transactions')}>
-                        <div className="overview-icon-container">
-                            <FaExchangeAlt />
-                        </div>
-                        <small>transactions</small>
-                        </div>             
-                    </div>
-          </div>
+            
           <section className='trading-view-forex-section dashboard-forex-section'>
                       <div className="videoframe-text-container" data-aos="fade-up">
                         <h1>market <span className="highlight">analysis </span></h1>
