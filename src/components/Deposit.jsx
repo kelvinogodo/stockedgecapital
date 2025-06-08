@@ -155,7 +155,7 @@ const Deposit = ({amount,active,close,route}) => {
                 <h3>deposit confirm</h3>
                 <p>confirm your deposit by uploading a proof of payment, after paying</p>
             <div className="checkout-info-container">
-                <p>You have requested <span className='bold'>{amount} USD</span> , Please pay <span className='bold'>{amount} USD</span>  for successful payment</p>
+                <p>You have requested <span className='bold'>{amount} EUR</span> , Please pay <span className='bold'>{amount} EUR</span>  for successful payment</p>
                 <h3>Please copy Link to copy wallet address and make payment</h3>
                 <div className="click-to-copy-container">
                     <span className='clipboard-btn'>

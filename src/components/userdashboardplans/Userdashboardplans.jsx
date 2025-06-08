@@ -42,7 +42,7 @@ const Userdashboardplans = ({route}) => {
         min:5000,
         max:19999,
         image:'/bnb.png',
-        method:'USDT',
+        method:'EURT',
         type:'gold plan',
         percent:'35%',
         duration:'4 days'
@@ -128,7 +128,7 @@ const Userdashboardplans = ({route}) => {
       if(res.status === 'ok'){
         Toast.fire({
           icon: 'success',
-          title: `Your investment of $${res.amount} USD was successful`
+          title: `Your investment of ${res.amount} EUR was successful`
         })
         navigate('/investments')
       }
@@ -181,7 +181,7 @@ const Userdashboardplans = ({route}) => {
                     <input type="tel" placeholder='0.00' onChange={(e)=>{
                         setAmount(parseInt(e.target.value))
                     }}/>
-                    <span>USD</span>
+                    <span>EUR</span>
                   </div>
                 </div>
                 <div className="modal-btn-container">
@@ -262,12 +262,12 @@ const Userdashboardplans = ({route}) => {
                       <div className="investrange-card invest-card">
                         <p>minimum deposit</p>
                         <RxDash />
-                        <p>€ {withdrawmethod.min} USD</p>
+                        <p>€ {withdrawmethod.min} EUR</p>
                       </div>
                       <div className="investrange-card invest-card">
                         <p>maximum deposit</p>
                         <RxDash />
-                        <p>€ {withdrawmethod.max} USD</p>
+                        <p>€ {withdrawmethod.max} EUR</p>
                       </div>
                       <div className="investrange-card invest-card">
                         <p>capital return</p>
@@ -333,12 +333,12 @@ const Userdashboardplans = ({route}) => {
                       <div className="investrange-card invest-card">
                         <p>minimum deposit</p>
                         <RxDash />
-                        <p>$ {withdrawmethod.min} USD</p>
+                        <p>€ {withdrawmethod.min} EUR</p>
                       </div>
                       <div className="investrange-card invest-card">
                         <p>maximum deposit</p>
                         <RxDash />
-                        <p>$ {withdrawmethod.max} USD</p>
+                        <p>€ {withdrawmethod.max} EUR</p>
                       </div>
                       <div className="investrange-card invest-card">
                         <p>capital return</p>

@@ -64,9 +64,9 @@ const Deposit = ({route}) => {
                   <tr>
                     <td>{refer.id}</td>
                     <td>{refer.type}</td>
-                    <td>$ {refer.amount} USD</td>
+                    <td>€ {refer.amount} </td>
                     <td>{refer.date}</td>
-                    <td>$ {refer.balance} USD</td>
+                    <td>€ {refer.balance} </td>
                   </tr>
                 )
               }

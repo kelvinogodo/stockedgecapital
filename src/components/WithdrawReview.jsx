@@ -151,22 +151,22 @@ const WithdrawReview = ({Active,withdrawAmount,closepage,route,funded}) => {
             <div className="withdrawal-review-container">
                 <div className="left-withdrawal-review-card">
                     <div className="review-left-card-tab">
-                        <p>Current Balance: <b>0 USD</b></p>
+                        <p>Current Balance: <b>0 EUR</b></p>
                     </div>
                     <div className="review-left-card-tab">
-                        <p>Request Balance: <b>{amount ? amount : ''} USD</b></p>
+                        <p>Request Balance: <b>{amount ? amount : ''} EUR</b></p>
                     </div>
                     <div className="review-left-card-tab">
-                        <p>Withdrawal Charge: <b>0 USD</b></p>
+                        <p>Withdrawal Charge: <b>0 EUR</b></p>
                     </div>
                     <div className="review-left-card-tab">
-                        <p>After Charge: <b>1000 USD</b> </p>
+                        <p>After Charge: <b>1000 EUR</b> </p>
                     </div>
                     <div className="review-left-card-tab">
-                        <p>Conversion Rate: <b>1 USD = 1 USD</b></p>
+                        <p>Conversion Rate: <b>1 EUR = 1 EUR</b></p>
                     </div>
                     <div className="review-left-card-tab">
-                        <p>You Will Get: <b>{amount ? amount : ''} USD</b></p>
+                        <p>You Will Get: <b>{amount ? amount : ''} EUR</b></p>
                     </div>
                     <div className="review-left-card-tab">
                         <p>Balance Will be: <b>{funded - amount}</b></p>

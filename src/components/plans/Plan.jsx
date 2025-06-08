@@ -131,7 +131,7 @@ const Plan = () => {
                     </svg>
                   </span>
                   <p>
-                    minimum deposit - ${withdrawmethod.min}
+                    minimum deposit - € {withdrawmethod.min}
                   </p>
                 </li>
                 <li class="list">
@@ -141,7 +141,7 @@ const Plan = () => {
                     </svg>
                   </span>
                   <p>
-                    maximum deposit - ${withdrawmethod.max}
+                    maximum deposit - € {withdrawmethod.max}
                   </p>
                 </li>
               </ul>

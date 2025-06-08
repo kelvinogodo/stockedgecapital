@@ -81,8 +81,8 @@ const Userdashboardhomepage = ({route}) => {
             <div className="welcome-kyc-section">
                 <p>wallet Balance</p>
                 <div className="username-container">
-              <h2>${userData ? userData.funded : ''}.00 USD</h2>
-              <small className='profit'>${userData ? userData.periodicProfit : ''}.00 USD profit earned</small>
+              <h2>€ {userData ? userData.funded : ''}.00</h2>
+              <small className='profit'>${userData ? userData.periodicProfit : ''}.00 EUR profit earned</small>
                 </div>
           </div>
           
@@ -132,7 +132,7 @@ const Userdashboardhomepage = ({route}) => {
                 <h2>total profit</h2>
               </div>
               <div className="withdrawll-card-amount">
-                <h2>  <small>$</small> { userData && userData.totalprofit}</h2>
+                <h2>  <small>€</small> { userData && userData.totalprofit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
@@ -143,7 +143,7 @@ const Userdashboardhomepage = ({route}) => {
                 <h2>bonus earned</h2>
               </div>
               <div className="withdrawll-card-amount">
-                <h2> <small>$</small> { userData && userData.periodicProfit}</h2>
+                <h2> <small>€</small> { userData && userData.periodicProfit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
@@ -155,7 +155,7 @@ const Userdashboardhomepage = ({route}) => {
               </div>
               <div className="withdrawll-card-amount">
                
-                <h2> <small>$</small> { userData && userData.totaldeposit}</h2>
+                <h2> <small>€</small> { userData && userData.totaldeposit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
@@ -166,7 +166,7 @@ const Userdashboardhomepage = ({route}) => {
                 <h2>total withdrawal</h2>
               </div>
               <div className="withdrawll-card-amount">
-                <h2> <small>$</small> { userData && userData.totalwithdraw}</h2>
+                <h2> <small>€</small> { userData && userData.totalwithdraw}</h2>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@ const Userdashboardhomepage = ({route}) => {
                             <p>referred users</p>
                         </div>
                         <div className="referral-text-container small-card">
-                            <h2>{userData ? userData.refBonus : '        '} USD</h2>
+                            <h2>{userData ? userData.refBonus : '        '} EUR</h2>
                             <p>referral commission</p>
                         </div>
 

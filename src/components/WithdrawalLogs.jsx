@@ -67,9 +67,9 @@ const WithdrawalLogs = ({route}) => {
                 userData.withdraw.map(refer =>
                   <tr>
                     <td>{refer.date}</td>
-                    <td>$ {refer.amount} USD</td>
+                    <td>€ {refer.amount}</td>
                     <td>{refer.id} </td>
-                    <td>$ {refer.balance} USD</td>
+                    <td>€ {refer.balance}</td>
                     <td>approved</td>
                   </tr>
                 )

@@ -128,7 +128,7 @@ const Userdashboardwithdraw = ({route}) => {
                     <input type="tel" placeholder='0.00' onChange={(e)=>{
                       setWithdrawAmount(parseInt(e.target.value))
                     }}/>
-                    <span>USD</span>
+                    <span>EUR</span>
                   </div>
                 </div>
                 <div className="modal-btn-container">
@@ -194,11 +194,11 @@ const Userdashboardwithdraw = ({route}) => {
                       <div className="investrange-container">
                         <div className="investrange-card">
                           <p>limit:</p>
-                          <p>{withdrawmethod.min} - {withdrawmethod.max} USD</p>
+                          <p>{withdrawmethod.min} - {withdrawmethod.max} EUR</p>
                         </div>
                         <div className="investrange-card">
                           <p>charge</p>
-                          <p>0 USD + 0%</p>
+                          <p>0 EUR + 0%</p>
                         </div>
                       </div>
                       <button className="deposit-btn" onClick={()=>{
@@ -232,11 +232,11 @@ const Userdashboardwithdraw = ({route}) => {
                       <div className="investrange-container">
                         <div className="investrange-card">
                           <p>limit:</p>
-                          <p>{withdrawmethod.min} - {withdrawmethod.max} USD</p>
+                          <p>{withdrawmethod.min} - {withdrawmethod.max} EUR</p>
                         </div>
                         <div className="investrange-card">
                           <p>charge</p>
-                          <p>0 USD + 0%</p>
+                          <p>0 EUR + 0%</p>
                         </div>
                       </div>
                       <button className="deposit-btn" onClick={()=>{
