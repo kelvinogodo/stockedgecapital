@@ -262,12 +262,12 @@ const Userdashboardplans = ({route}) => {
                       <div className="investrange-card invest-card">
                         <p>minimum deposit</p>
                         <RxDash />
-                        <p>$ {withdrawmethod.min} USD</p>
+                        <p>€ {withdrawmethod.min} USD</p>
                       </div>
                       <div className="investrange-card invest-card">
                         <p>maximum deposit</p>
                         <RxDash />
-                        <p>$ {withdrawmethod.max} USD</p>
+                        <p>€ {withdrawmethod.max} USD</p>
                       </div>
                       <div className="investrange-card invest-card">
                         <p>capital return</p>

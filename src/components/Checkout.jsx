@@ -35,19 +35,19 @@ const Checkout = ({Active,depositAmount,closepage,route}) => {
                     <div className="checkout-info-container">
                         <img src={Active.image} alt="" />
                         <div className="info-pallets">
-                            <p>amount to deposit: {depositAmount} USD</p>
+                            <p>amount to deposit: {depositAmount} EUR</p>
                         </div>
                         <div className="info-pallets">
-                            <p>charge: 0 USD</p>
+                            <p>charge: 0 EUR</p>
                         </div>
                         <div className="info-pallets">
-                            <p>minimum deposit: {Active.min} USD</p>
+                            <p>minimum deposit: {Active.min} EUR</p>
                         </div>
                         <div className="info-pallets">
-                            <p>conversion rate: 1USD = 1USD {Active.min}</p>
+                            <p>conversion rate: 1EUR = 1EUR {Active.min}</p>
                         </div>
                         <div className="info-pallets">
-                            <p>in USD {depositAmount}</p>
+                            <p>in EUR {depositAmount}</p>
                         </div>
                         <div class="uiverse" onClick={()=>{
                             setDeposit(true)

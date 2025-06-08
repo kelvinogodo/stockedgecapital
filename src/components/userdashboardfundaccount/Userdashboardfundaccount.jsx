@@ -55,6 +55,14 @@ const Userdashboardfundaccount = ({route}) => {
       method:'Solana (SOL) ',
       wallet:'48hQsUgcUTKipm6CWLznbLevMG1cVwUne6Hhwbgjmuuh'
     },
+    {
+      id:5,
+      min:500,
+      max:1000,
+      image:'/bnb.png',
+      method:'EURT (BEP20) ',
+      wallet:'0xf2805630bB4c436A2c5b5CA6Fddda4977187833E'
+    },
   ])
 
   // sweel alert code 
@@ -92,7 +100,7 @@ const Userdashboardfundaccount = ({route}) => {
               <div className="modal">
                 <div className="modal-header">
                   <h2>deposit via {activeMethod.method}</h2>
-                  <p>minimum deposit: {activeMethod.min} USD</p>
+                  <p>minimum deposit: {activeMethod.min} EUR</p>
                 </div>
               <MdClose className='close-modal-btn' onClick={()=>{setShowModal(false)}}/>
                 <div className="modal-input-container">
@@ -100,7 +108,7 @@ const Userdashboardfundaccount = ({route}) => {
                     <input type="tel" placeholder='0.00' onChange={(e)=>{
                       setDepositAmount(parseInt(e.target.value))
                     }}/>
-                    <span>USD</span>
+                    <span>EUR</span>
                   </div>
                 </div>
                 <div className="modal-btn-container">
@@ -163,11 +171,11 @@ const Userdashboardfundaccount = ({route}) => {
                       <div className="investrange-container">
                         <div className="investrange-card">
                           <p>minimum:</p>
-                          <p>{withdrawmethod.min} USD</p>
+                          <p>{withdrawmethod.min} EUR</p>
                         </div>
                         <div className="investrange-card">
                           <p>charge</p>
-                          <p>0 USD + 0%</p>
+                          <p>0 EUR + 0%</p>
                         </div>
                       </div>
                       <button className="deposit-btn" onClick={()=>{
@@ -202,11 +210,11 @@ const Userdashboardfundaccount = ({route}) => {
                       <div className="investrange-container">
                         <div className="investrange-card">
                           <p>minimum:</p>
-                          <p>{withdrawmethod.min} USD</p>
+                          <p>{withdrawmethod.min} EUR</p>
                         </div>
                         <div className="investrange-card">
                           <p>charge</p>
-                          <p>0 USD + 0%</p>
+                          <p>0 EUR + 0%</p>
                         </div>
                       </div>
                       <button className="deposit-btn" onClick={()=>{
