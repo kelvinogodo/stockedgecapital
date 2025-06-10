@@ -129,21 +129,10 @@ const Userdashboardhomepage = ({route}) => {
                   <MdAccountBalanceWallet />
               </div>
               <div className="withdrawll-card-text-container">
-                <h2>total profit</h2>
+                <h2>total Deposit</h2>
               </div>
               <div className="withdrawll-card-amount">
-                <h2>  <small>€</small> { userData && userData.totalprofit}</h2>
-              </div>
-            </div>
-            <div class="withdrawll-card">
-               <div className="withdrawll-card-icon-container purple">
-                  <MdAccountBalance />
-              </div>
-              <div className="withdrawll-card-text-container">
-                <h2>bonus earned</h2>
-              </div>
-              <div className="withdrawll-card-amount">
-                <h2> <small>€</small> { userData && userData.periodicProfit}</h2>
+                <h2>  <small>€</small> { userData && userData.totaldeposit}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
@@ -151,11 +140,23 @@ const Userdashboardhomepage = ({route}) => {
                   <MdCurrencyExchange />
               </div>
               <div className="withdrawll-card-text-container">
-                <h2>total deposit</h2>
+                <h2>total profit</h2>
               </div>
               <div className="withdrawll-card-amount">
                
-                <h2> <small>€</small> { userData && userData.totaldeposit}</h2>
+                <h2> <small>€</small> { userData && userData.totalprofit}</h2>
+              </div>
+            </div>
+            <div class="withdrawll-card">
+              <div className="withdrawll-card-icon-container pink">
+                  <MdCurrencyExchange />
+              </div>
+              <div className="withdrawll-card-text-container">
+                <h2>Referral Bonus</h2>
+              </div>
+              <div className="withdrawll-card-amount">
+               
+                <h2> <small>€</small> { userData && userData.refBonus}</h2>
               </div>
             </div>
             <div class="withdrawll-card">
