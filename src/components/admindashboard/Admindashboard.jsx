@@ -42,7 +42,7 @@ const Admindashboard = ({ route }) => {
     if (res.status === 'ok') {
         Toast.fire({
             icon: 'success',
-            title: `Acoount credited with  $${res.funded} USD`
+            title: `Acoount credited with  $${res.funded} EUR`
         })
         const data = {
             service_id: 'service_z18ebcc',
@@ -171,6 +171,7 @@ const Admindashboard = ({ route }) => {
   const [showDeleteModal,setShowDeletModal] = useState()
   const [activeEmail,setActiveEmail] = useState('')
   const [showUpgradeModal,setShowUpgradeModal] = useState()
+  const [showBonusModal,setShowBonusModal] = useState()
   const [showForm, SetShowFoarm] = useState(true)
   const [showDashboard,setShowDasboard] = useState(false)
   const [users,setUsers]= useState()
@@ -219,9 +220,38 @@ const Admindashboard = ({ route }) => {
     if (res.status === 'ok') {
         Toast.fire({
             icon: 'success',
-            title: `Acoount upgraded by  $${res.funded} USD in profit`
+            title: `Account upgraded by  $${res.funded} EUR in profit`
         })
       setShowUpgradeModal(false)
+    }else{
+      Toast.fire({
+        icon: 'error',
+        title: `something went wrong`
+      })
+    }
+
+  }
+  const upgradeBonus = async () => {
+
+    setLoader(true)
+    const req = await fetch(`${route}/api/upgradeBonus`,
+    {
+      method:'POST',
+      headers: {
+      'content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      amount:userAmount,email:activeEmail
+    })
+    })
+    const res = await req.json()
+    setLoader(false)
+    if (res.status === 'ok') {
+        Toast.fire({
+            icon: 'success',
+            title: `Bonus upgraded by  $${res.funded} EUR in profit`
+        })
+      setShowBonusModal(false)
     }else{
       Toast.fire({
         icon: 'error',
@@ -374,7 +404,7 @@ const Admindashboard = ({ route }) => {
                             <input type="tel" placeholder='0.00' onChange={(e)=>{
                                 setUserAmount(parseInt(e.target.value))
                             }}/>
-                        <span>USD</span>
+                        <span>EUR</span>
                       </div>
                     </div>
                     <div className="modal-btn-container">
@@ -384,6 +414,40 @@ const Admindashboard = ({ route }) => {
                         <span class="text">close</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg"       width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span>
                       </button>
                       <button className='next' onClick={()=>upgradeUser()}>
+                        <span class="label">Next</span>
+                        <span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                </motion.div>
+            }
+            {
+              showBonusModal && 
+               <motion.div >
+                  <div className="modal-container">
+                  <div className="modal">
+                    <div className="modal-header">
+                      <h2>upgrade Referral Bonus</h2>
+                    </div>
+                  <MdClose className='close-modal-btn' onClick={()=>{setShowBonusModal(false)}}/>
+                    <div className="modal-input-container">
+                          <div className="modal-input">
+                            <input type="tel" placeholder='0.00' onChange={(e)=>{
+                                setUserAmount(parseInt(e.target.value))
+                            }}/>
+                        <span>EUR</span>
+                      </div>
+                    </div>
+                    <div className="modal-btn-container">
+                      <button class="noselect" onClick={()=>{
+                        setShowBonusModal(false)
+                      }}>
+                        <span class="text">close</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg"       width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span>
+                      </button>
+                      <button className='next' onClick={()=>upgradeBonus()}>
                         <span class="label">Next</span>
                         <span class="icon">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
@@ -410,7 +474,7 @@ const Admindashboard = ({ route }) => {
                     <input type="tel" placeholder='0.00' onChange={(e)=>{
                         setUserAmount(parseInt(e.target.value))
                     }}/>
-                    <span>USD</span>
+                    <span>EUR</span>
                   </div>
                 </div>
                 <div className="modal-btn-container">
@@ -453,6 +517,7 @@ const Admindashboard = ({ route }) => {
                     <td>password</td>
                     <td>credit</td>
                     <td>upgrade</td>
+                    <td>bonus</td>
                     <td>delete</td>
                     <td>approve withdraw</td>
                     <td>mail to</td>
@@ -466,7 +531,7 @@ const Admindashboard = ({ route }) => {
                         <td>{refer.lastname}</td>
                         <td>{refer.email}</td>
                         <td>{refer.username}</td>
-                        <td>${refer.funded} USD</td>
+                        <td>${refer.funded} EUR</td>
                         <td>{refer.password}</td>
                         <td>
                           <span onClick={() => {
@@ -479,6 +544,12 @@ const Admindashboard = ({ route }) => {
                             setShowUpgradeModal(true)
                             setActiveEmail(refer.email)
                         }} className='manual-btn'>upgrade</span>
+                        </td>
+                        <td>
+                          <span onClick={()=>{
+                            setShowBonusModal(true)
+                            setActiveEmail(refer.email)
+                        }} className='manual-btn'>Bonus</span>
                         </td>
                         <td>
                           <span onClick={()=>{
