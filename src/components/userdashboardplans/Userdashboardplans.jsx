@@ -35,7 +35,7 @@ const Userdashboardplans = ({route}) => {
         method:'BTC',
         type:'starter plan',
         percent:'20%',
-        duration:'2 days'
+        duration:'2 months'
       },
       {
         id:2,
@@ -45,7 +45,7 @@ const Userdashboardplans = ({route}) => {
         method:'EURT',
         type:'gold plan',
         percent:'35%',
-        duration:'4 days'
+        duration:'1 month'
       },
       {
         id:3,

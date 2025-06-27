@@ -13,7 +13,7 @@ const Plan = () => {
         method:'BTC',
         type:'starter plan',
         percent:'20',
-        duration:'2 day(s)'
+        duration:'2 months'
       },
       {
         id:2,
@@ -23,7 +23,7 @@ const Plan = () => {
         method:'USDT',
         type:'gold plan',
         percent:'35',
-        duration:'4 day(s)'
+        duration:'1 month'
       },
       {
         id:3,
@@ -33,7 +33,7 @@ const Plan = () => {
         method:'tether(TRC20)',
         type:'premium plan',
         percent:'50',
-        duration:'7 day(s)'
+        duration:'7 days'
       },
       {
         id:4,
@@ -43,7 +43,7 @@ const Plan = () => {
         method:'tether(TRC20)',
         type:'diamond plan',
         percent:'65',
-        duration:'10 day(s)'
+        duration:'10 days'
       },
       {
         id:5,
@@ -53,7 +53,7 @@ const Plan = () => {
         method:'tether(TRC20)',
         type:'VIP plan',
         percent:'80',
-        duration:'12 day(s)'
+        duration:'12 days'
       },
       {
         id:6,
@@ -63,7 +63,7 @@ const Plan = () => {
         method:'tether(TRC20)',
         type:'real estate plan',
         percent:'100',
-        duration:'14 day(s)'
+        duration:'14 days'
       },
       ])
   return (
