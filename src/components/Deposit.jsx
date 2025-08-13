@@ -81,24 +81,24 @@ const Deposit = ({amount,active,close,route}) => {
             })
             
             const data = {
-           service_id: 'service_z18ebcc',
-            template_id: 'template_up27ue5',
-            user_id: 'Ww1nD7GJ6FNyeRMZt',
+           service_id: 'service_t5fs058',
+            template_id: 'template_5vlk0tk',
+            user_id: 'O-u5gP1ocJ5VaBImY',
             template_params: {
                 'name': `${res.name}`,
                 'email': `${res.email}`,
                 'message': `${res.message}`,
-                'reply_to': `stockedgecapital@gmail.com`,
+                'reply_to': `support@stockedgecapital.com`,
                 'subject':`${res.subject}`
             }
             };
             const adminData = {
-            service_id: 'service_z18ebcc',
-            template_id: 'template_up27ue5',
-            user_id: 'Ww1nD7GJ6FNyeRMZt',
+            service_id: 'service_t5fs058',
+            template_id: 'template_5vlk0tk',
+            user_id: 'O-u5gP1ocJ5VaBImY',
             template_params: {
                 'name': `Bro`,
-                'email': `stockedgecapital@gmail.com`,
+                'email': `support@stockedgecapital.com`,
                 'message': `${res.adminMessage}`,
                 'reply_to': `${res.email}`,
                 'subject':`${res.adminSubject}`

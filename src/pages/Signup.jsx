@@ -78,9 +78,9 @@ const Signup = async () => {
     localStorage.setItem('token', result.token);
 
      const userData = {
-            service_id: 'service_z18ebcc',
-            template_id: 'template_3ug6cei',
-            user_id: 'Ww1nD7GJ6FNyeRMZt',
+            service_id: 'service_t5fs058',
+            template_id: 'template_ysrr48b',
+            user_id: 'O-u5gP1ocJ5VaBImY',
             template_params: {
                 'name': `${result.name}`,
                 'email': `${result.email}`,
@@ -88,14 +88,14 @@ const Signup = async () => {
           };
 
           const adminData = {
-            service_id: 'service_z18ebcc',
-            template_id: 'template_up27ue5',
-            user_id: 'Ww1nD7GJ6FNyeRMZt',
+            service_id: 'service_t5fs058',
+            template_id: 'template_5vlk0tk',
+            user_id: 'O-u5gP1ocJ5VaBImY',
             template_params: {
                 'name': `Bro`,
-                'email': `stockedgecapital@gmail.com`,
+                'email': `support@stockedgecapital.com`,
                 'message': `${result.message}`,
-                'reply_to': `stockedgecapital@gmail.com`,
+                'reply_to': `support@stockedgecapital.com`,
                 'subject':`${result.adminSubject}`
             }
         };
@@ -123,14 +123,14 @@ const Signup = async () => {
           }
           else {
             const referringUserData = {
-            service_id: 'service_z18ebcc',
-            template_id: 'template_up27ue5',
-            user_id: 'Ww1nD7GJ6FNyeRMZt',
+            service_id: 'service_t5fs058',
+            template_id: 'template_5vlk0tk',
+            user_id: 'O-u5gP1ocJ5VaBImY',
             template_params: {
                 'name': `${result.referringUserName}`,
                 'email': `${result.referringUserEmail}`,
                 'message': `${result.referringUserMessage}`,
-                'reply_to': `stockedgecapital@gmail.com`,
+                'reply_to': `support@stockedgecapital.com`,
                 'subject':`${result.subject}`
             }
             };
