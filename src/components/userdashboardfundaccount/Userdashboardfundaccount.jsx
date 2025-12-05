@@ -59,7 +59,7 @@ const Userdashboardfundaccount = ({route}) => {
       id:5,
       min:500,
       max:1000,
-      image:'/bnb.png',
+      image:'/tron.png',
       method:'USDT (BEP20) ',
       wallet:'0x9B2c5b8D4c97DcF2D35C501ddf8006e58668aef8'
     },
@@ -67,7 +67,7 @@ const Userdashboardfundaccount = ({route}) => {
       id:6,
       min:500,
       max:1000,
-      image:'/etherium.png',
+      image:'/tron.png',
       method:'USDT (ERC20) ',
       wallet:'0x9B2c5b8D4c97DcF2D35C501ddf8006e58668aef8'
     },
