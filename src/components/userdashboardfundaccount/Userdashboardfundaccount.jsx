@@ -63,6 +63,14 @@ const Userdashboardfundaccount = ({route}) => {
       method:'USDT (BEP20) ',
       wallet:'0x9B2c5b8D4c97DcF2D35C501ddf8006e58668aef8'
     },
+    {
+      id:6,
+      min:500,
+      max:1000,
+      image:'/etherium.png',
+      method:'USDT (ERC20) ',
+      wallet:'0x9B2c5b8D4c97DcF2D35C501ddf8006e58668aef8'
+    },
   ])
 
   // sweel alert code 
